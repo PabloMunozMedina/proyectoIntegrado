@@ -1,0 +1,56 @@
+#header-nav {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    background-image: url("/img/banner_header2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    .navbar-brand {
+        display: flex;
+        width: 50%;
+        @media (min-width: 1800px) {
+            margin-left: -6em;
+        }
+        .titulo {
+            display: inline;
+            font-size: 0.8rem;
+        }
+    }
+    .flexsearch {
+        display: flex;
+        justify-content: center;
+        font-size: 0.6rem;
+        margin: 1em;
+        @media (min-width: 768px) {
+            margin-left: 20em;
+        }
+        .flexsearch--wrapper {
+            margin-left: 1rem;
+            .flexsearch--form {
+                display: flex;
+            }
+        }
+    }
+    .navbar-toggler {
+        margin-left: 2rem;
+    }
+    .show {
+        text-align: center;
+    }
+    .nav-item {
+        .bxs-user-circle {
+            margin: 0.25em;
+            font-size: 40px;
+            color: black;
+            text-decoration: none;
+        }
+    }
+    .dropdown-item {
+        display: flex;
+        justify-content: space-evenly;
+        .bx-log-out {
+            font-size: 24px;
+        }
+    }
+}
